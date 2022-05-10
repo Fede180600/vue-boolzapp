@@ -100,3 +100,28 @@ img {
     color: #b1b1b1;
 }
 /* /HEADERS OF CONTACTS CONTAINER & CHAT CONTAINER SETTINGS */
+
+/* NOTICE CONTAINER */
+.notice-container {
+    height: 60px;
+    background-color: #8edafc;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.circle-bell {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: white;
+    color:#8edafc;
+    text-align: center;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+.notice-text a {
+    font-size: 12px;
+    color: #8b8b8b
+}
