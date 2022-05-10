@@ -217,6 +217,28 @@ img {
 .send-message-container {
     height: 60px;
     background-color: #f3eeea;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.send-message-input-container {
+    margin: 0 25px;
+    flex-grow: 1;
+}
+
+.send-message-input-container input {
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.send-message-icon i {
+    color: #8b8b8b;
+}
+
 /* /CHAT CONTAINER */
 
