@@ -80,6 +80,8 @@ img {
 .interlocutor-img-container {
     width: 2.2vw;
     height: 2.2vw;
+    min-width: 35px;
+    min-height: 35px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 5px;
@@ -177,6 +179,8 @@ img {
 .contact-left .contact-profile-image {
     width: 2.8vw;
     height: 2.8vw;
+    min-width: 40px;
+    min-height: 40px;
     margin-right: 10px;
     border-radius: 50%;
     overflow: hidden;
