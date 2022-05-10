@@ -47,14 +47,6 @@ img {
 
     border: 1px solid black;
 }
-/* CHAT CONTAINER */
-.chat-container {
-    width: 70%;
-    height: 100%;
-
-
-    border: 1px solid black;
-}
 /* USER CONTAINER BORDER RIGHT  */
 .user-container {
     border-right: 1px solid #b1b1b1;
@@ -207,4 +199,24 @@ img {
     color: #b1b1b1
 }
 /* /CONTACTS CONTAINER BOTTOM */
+
+/* CHAT CONTAINER */
+.chat-container {
+    width: 70%;
+    height: 100%;
+
+
+    border: 1px solid black;
+}
+
+.chat {
+    height: calc(100% - 110px);
+    background-image: url(../img/mine.jpg);
+}
+
+.send-message-container {
+    height: 60px;
+    background-color: #f3eeea;
+}
+/* /CHAT CONTAINER */
 
