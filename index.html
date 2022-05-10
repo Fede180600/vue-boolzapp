@@ -67,7 +67,25 @@
                     <!-- CONTACTS CONTAINER BOTTOM -->
                     <div class="contacts-container-bottom">
                         <ul class="contacts-list">
-                        
+                            <li class="contact" v-for="contact in contacts">    
+                                <div class="contact-left">
+                                    <div class="contact-profile-image">
+                                        <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="Contact Name">
+                                    </div>
+    
+                                    <div class="contact-info">
+                                        <span class="contact-name">{{ contact.name }}</span>
+                                        <br>
+                                        <span class="last-message">Ultimo messaggio inviato</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-right">
+                                    <div class="last-message-time">
+                                        <span>12:00</span>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <!-- /CONTACTS CONTAINER BOTTOM -->
