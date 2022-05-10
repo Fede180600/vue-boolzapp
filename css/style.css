@@ -32,9 +32,6 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
-    border: 1px solid black;
 }
 
 /* CONTACTS CONTAINER */
@@ -44,8 +41,6 @@ img {
     min-width: 250px;
     display: flex;
     flex-direction: column;
-
-    border: 1px solid black;
 }
 /* USER CONTAINER BORDER RIGHT  */
 .user-container {
@@ -208,16 +203,61 @@ img {
 .chat-container {
     width: 70%;
     height: 100%;
-
-
-    border: 1px solid black;
 }
 
+
+/* CHAT */
 .chat {
     height: calc(100% - 110px);
     background-image: url(../img/mine.jpg);
+    padding-top: 40px;
+    overflow-y: auto;
 }
 
+ul.messages {
+    list-style: none;
+}
+
+li.message {
+    margin-bottom: 4px;
+}
+
+li.message>span {
+    display: inline-block;
+    min-width: 250px;
+    max-width: 43%;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.sended-container {
+    text-align: end;
+}
+
+.sended-message {
+    background-color: #d5f9ba;
+    margin-right: 8%;
+}
+
+.recived-message {
+    background-color: #ffffff;
+    margin-left: 8%;
+}
+
+.message-time {
+    font-size: 10px;
+    color: #b1b1b1;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+}
+/* /CHAT */
+
+/* SEND MESSAGE CONTAINER */
 .send-message-container {
     height: 60px;
     background-color: #f3eeea;
@@ -243,6 +283,6 @@ img {
 .send-message-icon i {
     color: #8b8b8b;
 }
-
+/* /SEND MESSAGE CONTAINER */
 /* /CHAT CONTAINER */
 
