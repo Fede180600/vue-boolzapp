@@ -12,7 +12,7 @@ html {
 img {
     width: 100%;
 }
-/* APP */
+/* APP WRAP */
 .app-wrap {
     width: 100%;
     height: 100vh;
@@ -22,6 +22,7 @@ img {
     background-color: #d8dbd6;
 }
 
+/* APP CONTAINER */
 .app-container {
     width: 85%;
     height: 95%;
@@ -37,6 +38,7 @@ img {
     border: 1px solid black;
 }
 
+/* CONTACTS CONTAINER */
 .contacts-container {
     width: 30%;
     height: 100%;
@@ -44,7 +46,7 @@ img {
 
     border: 1px solid black;
 }
-
+/* CHAT CONTAINER */
 .chat-container {
     width: 70%;
     height: 100%;
@@ -52,11 +54,12 @@ img {
 
     border: 1px solid black;
 }
-
+/* USER CONTAINER BORDER RIGHT  */
 .user-container {
     border-right: 1px solid #b1b1b1;
 }
 
+/* HEADERS OF CONTACTS CONTAINER & CHAT CONTAINER SETTINGS */
 .user-container,
 .interlocutor-container {
     width: 100%;
@@ -96,3 +99,4 @@ img {
     margin-right: 10px;
     color: #b1b1b1;
 }
+/* /HEADERS OF CONTACTS CONTAINER & CHAT CONTAINER SETTINGS */
