@@ -111,14 +111,17 @@ img {
 }
 
 .circle-bell {
-    height: 45px;
-    width: 45px;
+    height: 2.5vw;
+    width: 2.5vw;
+    min-width: 35px;
+    min-height: 35px;
     border-radius: 50%;
     background-color: white;
     color:#8edafc;
-    text-align: center;
-    line-height: 45px;
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
 }
 
 .notice-text a {
