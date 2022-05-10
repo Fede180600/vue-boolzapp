@@ -59,6 +59,7 @@
                         </div>
     
                         <div class="search-container">
+                            <span class="search-icon"><i class="fas fa-search"></i></span>
                             <input type="text" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </div>
@@ -76,13 +77,13 @@
                                     <div class="contact-info">
                                         <span class="contact-name">{{ contact.name }}</span>
                                         <br>
-                                        <span class="last-message">Ultimo messaggio inviato</span>
+                                        <span class="last-message">{{ contact.messages[0].message }}</span>
                                     </div>
                                 </div>
 
                                 <div class="contact-right">
                                     <div class="last-message-time">
-                                        <span>12:00</span>
+                                        <span>{{ contact.messages[0].date }}</span>
                                     </div>
                                 </div>
                             </li>

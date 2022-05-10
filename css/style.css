@@ -130,6 +130,14 @@ img {
 .search-container {
     padding: 10px 10px;
     background-color: #fafafa;
+    display: flex;
+}
+
+.search-container span {
+    padding: 10px 30px;
+    color: #8b8b8b;
+    background-color: #ffffff;
+    border-right: 1px solid #f1f1f1;
 }
 
 .search-container input {
