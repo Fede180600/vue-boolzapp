@@ -19,7 +19,7 @@ img {
     position: absolute;
 
     /* TEST */
-    background-color: #d8dbd6;
+    background: linear-gradient(#009688 100px, #dadbd3 80px);
 }
 
 /* APP CONTAINER */
