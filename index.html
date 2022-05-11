@@ -138,13 +138,17 @@
                     <!-- CHAT -->
                     <div class="chat">
                         <ul class="messages">
-                            <li class="message sent-container">
-                                <span class="sent-message">
-                                    Hai portato a spasso il cane?
+                            <li class="message"
+                            v-for="message in contacts[currentContact].messages"
+                            :class="{ sent_container: message.status == 'sent' }">
+                                <span 
+                                :class="{ sent_message: message.status == 'sent' }"
+                                >
+                                    {{ message.message }}
                                     <span class="message-time">11:18</span>
                                 </span>
                             </li>
-                            <li class="message sent-container">
+                            <!-- <li class="message sent-container">
                                 <span class="sent-message">
                                     Ricordati di stendere i panni
                                     <span class="message-time">11:53</span>
@@ -170,7 +174,7 @@
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam maxime quia alias exercitationem quam quas optio asperiores nesciunt aliquid voluptate a, magnam, libero culpa recusandae, accusamus blanditiis modi. Odit, aspernatur?
                                     <span class="message-time">12:08</span>
                                 </span>
-                            </li>
+                            </li> -->
                             
                         </ul>
                     </div>

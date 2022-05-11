@@ -246,16 +246,16 @@ li.message>span {
     position: relative;
 }
 
-.sent-container {
+.sent_container {
     text-align: end;
 }
 
-.sent-message {
+.sent_message {
     background-color: #d5f9ba;
     margin-right: 8%;
 }
 
-.recived-message {
+.recived_message {
     background-color: #ffffff;
     margin-left: 8%;
 }
