@@ -167,6 +167,7 @@ const app = new Vue(
             ],
             currentContact: 0,
             newMessage: '',
+            search: '',
         },
         methods: {
             showChat: function(index) {
@@ -182,6 +183,7 @@ const app = new Vue(
                 }
                 this.contacts[this.currentContact].messages.push(newMessage);
                 this.newMessage = '';
+
                 setTimeout( () => {
                     const answerMessage = {
                         message: 'ok',
@@ -191,6 +193,17 @@ const app = new Vue(
                     this.contacts[this.currentContact].messages.push(answerMessage);
 
                 }, 1000);
+            },
+
+            filterChats: function() {
+                console.log(this.search);
+                this.contacts.forEach( contact => {
+                    if (contact.name.toLowerCase().includes(this.search.toLowerCase())) {
+                        contact.visible = true;
+                    } else {
+                        contact.visible = false;
+                    }
+                })
             }
         }
     }

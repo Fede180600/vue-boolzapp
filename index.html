@@ -67,7 +67,7 @@
                         <!-- SEARCH CONTAINER -->
                         <div class="search-container">
                             <span class="search-icon"><i class="fas fa-search"></i></span>
-                            <input type="text" id="search" placeholder="Cerca o inizia una nuova chat">
+                            <input type="text" id="search" placeholder="Cerca o inizia una nuova chat" v-model="search" @keyup="filterChats">
                         </div>
                         <!-- /SEARCH CONTAINER -->
 
@@ -82,6 +82,7 @@
                             <li class="contact" 
                             v-for="(contact, index) in contacts"
                             :class="{ contact__active:  index === currentContact }"
+                            v-if="contact.visible"
                             @click="showChat(index)">    
                                 <div class="contact-left">
                                     <div class="contact-profile-image">
