@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1">
     <title>Boolzapp</title>
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
@@ -31,6 +31,7 @@
 
                     <!-- CONTACTS CONTAINER TOP -->
                     <div class="contacts-container-top">
+                        <!-- USER CONTAINER -->
                         <div class="user-container">
                             <div class="user-container-left">
                                 <div class="user-img-container">
@@ -48,7 +49,9 @@
                                 </div>
                             </div>
                         </div>
-    
+                        <!-- /USER CONTAINER -->
+
+                        <!-- NOTICE CONTAINER -->
                         <div class="notice-container">
                             <div class="circle-bell">
                                 <i class="fas fa-bell-slash"></i>
@@ -59,21 +62,27 @@
                                 <a href="">Attiva notifiche desktop</a>
                             </div>
                         </div>
-    
+                        <!-- /NOTICE CONTAINER -->
+                        
+                        <!-- SEARCH CONTAINER -->
                         <div class="search-container">
                             <span class="search-icon"><i class="fas fa-search"></i></span>
-                            <input type="text" placeholder="Cerca o inizia una nuova chat">
+                            <input type="text" id="search" placeholder="Cerca o inizia una nuova chat">
                         </div>
+                        <!-- /SEARCH CONTAINER -->
+
                     </div>
                     <!-- /CONTACTS CONTAINER TOP -->
 
                     <!-- CONTACTS CONTAINER BOTTOM -->
                     <div class="contacts-container-bottom">
+                        <!-- CONTACTS LIST -->
                         <ul class="contacts-list">
+                            <!-- CONTACT -->
                             <li class="contact" v-for="contact in contacts">    
                                 <div class="contact-left">
                                     <div class="contact-profile-image">
-                                        <img :src="'img/avatar' + contact.avatar + '.jpg'" alt="Contact Name">
+                                        <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
                                     </div>
     
                                     <div class="contact-info">
@@ -89,7 +98,10 @@
                                     </div>
                                 </div>
                             </li>
+                        <!-- /CONTACT -->
+
                         </ul>
+                        <!-- /CONTACTS LIST -->
                     </div>
                     <!-- /CONTACTS CONTAINER BOTTOM -->
 

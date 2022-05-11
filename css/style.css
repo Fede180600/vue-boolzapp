@@ -17,9 +17,7 @@ img {
     width: 100%;
     height: 100vh;
     /* position: absolute; */
-
-    /* TEST */
-    background: linear-gradient(#009688 100px, #dadbd3 80px);
+    background: linear-gradient(#009688 100px, #dadbd3 100px);
 }
 
 /* APP CONTAINER */
@@ -219,7 +217,7 @@ img {
     height: calc(100% - 110px);
     background-image: url(../img/mine.jpg);
     padding-top: 40px;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 ul.messages {
