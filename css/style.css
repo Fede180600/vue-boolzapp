@@ -179,6 +179,7 @@ img {
 .contact-left {
     display: flex;
     padding-left: 13px;
+    flex-grow: 1;
 }
 
 .contact-left .contact-profile-image {
@@ -198,12 +199,13 @@ img {
 
 .contact-right {
     height: 100%;
+    min-width: 100px;
 }
 
 .last-message-time>span {
     position: relative; 
-    top: 5px;
-    right: 5px;
+    top: 8px;
+    right: 3px;
     font-size: 12px;
     color: #b1b1b1
 }

@@ -117,10 +117,10 @@
                     <div class="interlocutor-container">
                         <div class="interlocutor-container-left">
                             <div class="interlocutor-img-container">
-                                <img src="img/avatar_1.jpg" alt="Interlocutor Profile Image">
+                                <img :src="'img/avatar' + contacts[currentContact].avatar + '.jpg'" alt="Interlocutor Profile Image">
                             </div>
                             <div class="interlocutor-container-text">
-                                <span class="interlocutor-name">Michele</span>
+                                <span class="interlocutor-name">{{ contacts[currentContact].name }}</span>
                                 <br>
                                 <span class="last-login">Ultimo accesso oggi alle 12:00</span>
                             </div>
