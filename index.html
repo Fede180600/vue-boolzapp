@@ -139,12 +139,8 @@
                     <!-- CHAT -->
                     <div class="chat">
                         <ul class="messages">
-                            <li class="message"
-                            v-for="message in contacts[currentContact].messages"
-                            :class="{ sent_container: message.status == 'sent' }">
-                                <span 
-                                :class="{ sent_message: message.status == 'sent' }"
-                                >
+                            <li class="message clearfix" v-for="message in contacts[currentContact].messages">
+                                <span :class="message.status == 'sent' ? 'sent_message' : 'recived_message'" >
                                     {{ message.message }}
                                     <span class="message-time">{{ message.date }}</span>
                                 </span>

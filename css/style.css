@@ -231,7 +231,14 @@ ul.messages {
 }
 
 li.message {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.clearfix {
+    display: table;
+    clear: both;
+    content: "";
 }
 
 li.message>span {
@@ -246,13 +253,10 @@ li.message>span {
     position: relative;
 }
 
-.sent_container {
-    text-align: end;
-}
-
 .sent_message {
     background-color: #d5f9ba;
     margin-right: 8%;
+    float: right;
 }
 
 .recived_message {

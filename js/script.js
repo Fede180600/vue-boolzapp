@@ -182,6 +182,15 @@ const app = new Vue(
                 }
                 this.contacts[this.currentContact].messages.push(newMessage);
                 this.newMessage = '';
+                setTimeout( () => {
+                    const answerMessage = {
+                        message: 'ok',
+                        date: newMessageDate,
+                        status: 'recived'
+                    }
+                    this.contacts[this.currentContact].messages.push(answerMessage);
+
+                }, 1000);
             }
         }
     }
