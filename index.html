@@ -79,7 +79,9 @@
                         <!-- CONTACTS LIST -->
                         <ul class="contacts-list">
                             <!-- CONTACT -->
-                            <li class="contact" v-for="contact in contacts">    
+                            <li class="contact" 
+                            v-for="(contact, index) in contacts"
+                            :class="{ contact__active:  index === currentContact }">    
                                 <div class="contact-left">
                                     <div class="contact-profile-image">
                                         <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
@@ -136,21 +138,21 @@
                     <!-- CHAT -->
                     <div class="chat">
                         <ul class="messages">
-                            <li class="message sended-container">
-                                <span class="sended-message">
+                            <li class="message sent-container">
+                                <span class="sent-message">
                                     Hai portato a spasso il cane?
                                     <span class="message-time">11:18</span>
                                 </span>
                             </li>
-                            <li class="message sended-container">
-                                <span class="sended-message">
+                            <li class="message sent-container">
+                                <span class="sent-message">
                                     Ricordati di stendere i panni
                                     <span class="message-time">11:53</span>
                                 </span>
                             </li>
 
-                            <li class="message sended-container">
-                                <span class="sended-message">
+                            <li class="message sent-container">
+                                <span class="sent-message">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsa, accusantium sunt earum quam velit quidem deleniti rerum optio voluptate, dolorum aliquam, eaque accusamus quia quisquam. Corrupti ducimus veniam nesciunt.
                                     <span class="message-time">11:53</span>
                                 </span>

@@ -172,6 +172,10 @@ img {
     justify-content: space-between;
 }
 
+.contact__active {
+    background-color: #cfcfcf;
+}
+
 .contact-left {
     display: flex;
     padding-left: 13px;
@@ -240,11 +244,11 @@ li.message>span {
     position: relative;
 }
 
-.sended-container {
+.sent-container {
     text-align: end;
 }
 
-.sended-message {
+.sent-message {
     background-color: #d5f9ba;
     margin-right: 8%;
 }
