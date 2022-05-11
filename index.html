@@ -81,7 +81,8 @@
                             <!-- CONTACT -->
                             <li class="contact" 
                             v-for="(contact, index) in contacts"
-                            :class="{ contact__active:  index === currentContact }">    
+                            :class="{ contact__active:  index === currentContact }"
+                            @click="showChat(index)">    
                                 <div class="contact-left">
                                     <div class="contact-profile-image">
                                         <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
