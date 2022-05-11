@@ -165,11 +165,23 @@ const app = new Vue(
                     ],
                 }
             ],
-            currentContact: 0
+            currentContact: 0,
+            newMessage: '',
         },
         methods: {
             showChat: function(index) {
                 this.currentContact = index;
+            },
+
+            sendNewMessage: function() {
+                const newMessageDate = dayjs().format('H:mm');
+                const newMessage = {
+                    message: this.newMessage,
+                    date: newMessageDate,
+                    status: 'sent'
+                }
+                this.contacts[this.currentContact].messages.push(newMessage);
+                this.newMessage = '';
             }
         }
     }
