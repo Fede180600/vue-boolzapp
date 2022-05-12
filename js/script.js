@@ -126,7 +126,7 @@ const app = new Vue(
                     ],
                 },
                 {
-                    name: 'Federico',
+                    name: 'Sofia',
                     avatar: '_7',
                     visible: true,
                     messages: [
@@ -170,6 +170,7 @@ const app = new Vue(
             search: '',
         },
         methods: {
+
             showChat: function(index) {
                 this.currentContact = index;
             },
@@ -196,7 +197,6 @@ const app = new Vue(
             },
 
             filterChats: function() {
-                console.log(this.search);
                 this.contacts.forEach( contact => {
                     if (contact.name.toLowerCase().includes(this.search.toLowerCase())) {
                         contact.visible = true;
