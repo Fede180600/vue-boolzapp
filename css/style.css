@@ -245,12 +245,52 @@ li.message>span {
     display: inline-block;
     min-width: 250px;
     max-width: 43%;
-    padding: 10px 0;
-    padding-left: 10px;
+    padding: 10px;
     font-size: 14px;
     border-radius: 10px;
     text-align: left;
     position: relative;
+}
+li.message>span:hover i.fa-chevron-down {
+    display: block;
+}
+
+i.fa-chevron-down {
+    color: #8b8b8b;
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+}
+
+i.fa-chevron-down:focus .chevron-options {
+    display: block;
+}
+
+.chevron-options {
+    color: rgb(94, 94, 94);
+    min-width: 150px;
+    max-width: 300px;
+    position: absolute;
+    right: -5px;
+    bottom: -160%;
+    z-index: 100;
+    display: none;
+}
+
+.chevron-option {
+    padding: 10px 5px;
+    border: 1px solid lightgray;
+    background-color: rgb(233, 233, 233);
+}
+
+.chevron-option:hover {
+    font-weight: 600;
+}
+
+.option-icon {
+    float: right;
 }
 
 .sent_message {
