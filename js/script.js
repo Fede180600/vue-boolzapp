@@ -209,8 +209,8 @@ const app = new Vue(
             getCurrentTime: function() {
                 return dayjs().format('DD/MM/YYYY HH:mm:ss');
             },
-            getTime: function() {
-                const dayjsDate = dayjs(this.date, 'DD-MM-YYYY HH:mm:ss');
+            getTime: function(dateToFormat) {
+                let dayjsDate = dayjs(dateToFormat, 'DD-MM-YYYY HH:mm:ss');
                 return dayjsDate.format('HH:mm');
             },
         }
